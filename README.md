@@ -4,6 +4,7 @@ This is the DeiT model code warehouse, which mainly includes models: ___DeiT___,
 
 ## Precautions
 <1>Before you use the code to train your own data set, please first enter the ___train_gpu.py___ file and modify the ___data_root___, ___batch_size___ and ___nb_classes___ parameters. If you want to draw the confusion matrix and ROC curve, you only need to remove the ___Plot_ROC___ and ___Predictor___ at the end of the code. The comment of the function is enough, and the third parameter can be changed to the path of your own model weights file(.pth).
+
 <2>If you want to use another model, import it in the ___train_gpu.py___ file, then find the following code and replace the name of model function.
 ```
 model = deit_tiny_patch16_224(pretrained=False,
