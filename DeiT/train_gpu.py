@@ -149,7 +149,7 @@ def get_args_parser():
     parser.add_argument('--attn-only', action='store_true')
 
     # Dataset parameters
-    parser.add_argument('--data_root', default='/usr/local/Huangshuqi/ImageData/flower_data', type=str,
+    parser.add_argument('--data_root', default='/flower_data', type=str,
                         help='dataset path')
     parser.add_argument('--nb_classes', type=int, default=5, help='number classes of your dataset')
     parser.add_argument('--data-set', default='IMNET', choices=['CIFAR', 'IMNET', 'INAT', 'INAT19'],
