@@ -26,7 +26,7 @@ torchrun --nproc_per_node=8 train_gpu.py
 ```
 
 ### train model with single-machine multi-card: 
-(using a specified part of the graphics card: for example, I want to use the second and fourth cards)
+(using a specified part of the cards: for example, I want to use the second and fourth cards)
 ```
 CUDA_VISIBLE_DEVICES=1,3 torchrun --nproc_per_node=2 train_gpu.py
 ```
